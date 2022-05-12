@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./html/css/main.css">
+</head>
+<body>
+    
+    <div class="container"> 
+    <!--wrap 또는 container로 레이아웃 전체를 감싸는 박스 하나 생성-->
+        <div class="header"></div>
+        <div class="left_menu"></div><!--
+    --><div class="right_menu">
+            <p>안녕하세요</p>
+        </div>
+        <!--
+            vertical-align은 상하정렬
+            그냥 글을 쓰면 베이스라인이 생기기 때문에
+            베이스라인 존재시 박스들은 베이스라인 위쪽부터 박스를 채움
+        -->
+        <!--
+            float시 block과 상관없이 붕떠서 옆으로 붙음
+            display : inline-block은 자신의 크기만큼 차지
+            때문에 사이에 공백이나 여백을 제거해줘야 붙음
+            (사이에 주석기호를 사용해서 엔터키처럼 작성가능, 
+            또는 부모태그에 font-size:0px로 해주면 작성가능)
+        -->
+        <div class="footer"></div>
+        <!--
+            앞의 레이아웃에서 float로 인해서 배열이 겹쳐질때에
+            float 다음요소에게 clear로 똑같이 left,right 
+            또는 어떤걸 썼는지 모를땐 both를 주면 현상 해결가능
+        -->
+    </div>
+
+</body>
+</html>

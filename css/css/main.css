@@ -1,0 +1,16 @@
+body {
+    margin: 0px;
+    font-family: 'gulim', 'dotum', 'arial'; /*굴림 적용안되면 도톰안되면 에이리얼 적용*/ 
+}
+
+@font-face { /*폰트파일 다운받아서 이름을 정해주고 그것을 사용가능*/
+    font-family : '새로운폰트';
+    src : url(/html/font/Cafe24SsurroundAir.ttf);
+}
+
+body { /* 용량줄이려면 .woff 파일이 좋음*/
+    font-family: '새로운폰트'; /*한글폰트는 사이즈가 커서 로딩이 길기에 적게사용*/
+}                           /*폰트는 font-weight를 쓰면 안이쁘기에 굵은폰트 따로 지정해주는게 좋음*/
+
+/* 구글폰트 같은곳에서 셀렉트해서 링크로서 복붙해서도 사용가능*/
+/* 폰트가 깨진다면 transform:rotate(0.03deg)정도로 정말 조금 돌려주면 깨지는게 완화됨*/

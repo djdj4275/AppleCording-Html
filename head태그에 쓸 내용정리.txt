@@ -1,0 +1,18 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="자바스크립트 인강 전문 코딩애플입니다.">
+  <meta name="keywords" content="HTML,CSS,JavaScript,자바스크립트,코딩">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+charset :  인코딩형식
+description :  구글검색시의 파안제목으로 뜨는 글귀
+keywords : 검색에 도움을 주는 키워드
+viewport : 사이트 초기 줌레벨, 폭 정해줌 / width=device-width : 모바일 기기의 실제폭으로 렌더링 (폰 해상도가 1920px 넘어도 폰창으로 띄움)
+initial-scale=1.0 : 접속시 화면 줌레벨 설정
+
+<head>
+  <link rel="icon" href="아이콘경로.ico" type="image/x-icon">
+</head> 
+
+이렇게 설정하면 사이트 탭창 옆에 뜨는 조그만 이모티콘 설정가능 (규격은 32 x 32)

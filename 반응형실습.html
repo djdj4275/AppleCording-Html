@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product-container {
+            width: 80%;
+            max-width: 1000px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .product-container div {
+            float: left;
+            width: 25%;
+        }
+
+        @media screen and (max-width : 1200px) {
+            .product-container div {
+                text-align: center;
+                width: 50%;
+            }
+            .product-container {
+                max-width: 600px;
+            }
+        }
+        @media screen and (max-width : 768px) {
+            .product-container div {
+                text-align: center;
+                width: 100%;
+            }
+        }
+    </style>
+    <!-- [if lt IE 10]>
+        <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+    <![endif]-->
+    <!-- 위의 형식처럼 internet explorer버전이 10보다 낮을땐 -->
+    <!-- 다른 css파일을 불러와서 호환성에 맞게 사용 -->
+</head>
+<body>
+    <div class="product-container">
+        <div>
+            <h4>fast shipping</h4>
+            <p>lorem ipsum</p>
+        </div>
+        <div>
+            <h4>fast shipping</h4>
+            <p>lorem ipsum</p>
+        </div>
+        <div>
+            <h4>fast shipping</h4>
+            <p>lorem ipsum</p>
+        </div>
+        <div>
+            <h4>fast shipping</h4>
+            <p>lorem ipsum</p>
+        </div>
+        <div style="float: none; clear: both;"></div>
+    </div>
+    
+</body>
+</html>

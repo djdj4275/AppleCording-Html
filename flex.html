@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-item {
+            width: 150px;
+            height: 100px;
+            background-color: grey;
+            margin: 5px;
+        }
+        .flex-container {
+            width: 600px; 
+            height: 600px; /*flex-grow를 쓰기위해선 큰틀의 크기가 남아야함*/
+            display: flex; /*가로로 배치하고픈곳의 부모요소에 flex주면 됌*/
+            justify-content: center; /*flex이용시 가로정렬사용*/
+            flex-direction: column; /*flex이용시 세로정렬사용*/ 
+            flex-wrap: wrap; /*width커서 넘치면 밑으로 넘겨줌*/
+            align-items: center; /*상하정렬*/
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container"> <!--flex-grow는 flex-grow를 준 다른요소들과의 비율-->
+        <div class="flex-item grow1">1</div>
+        <div class="flex-item grow2" style="flex-grow: 2;">2</div>
+        <div class="flex-item">3</div>
+    </div>
+</body>
+</html>

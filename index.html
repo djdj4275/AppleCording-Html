@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/main.css" rel="stylesheet">
+</head>
+<body>
+    
+    <img src="./img/lion.png" class="profile">
+        <!-- 
+            display: block; margin-left: auto; margin-right: auto;
+            이렇게 세개를 하면 중앙으로 정렬 할수있다.
+        -->
+    <h3 class="sdfsdf">jun_aay</h3>
+    <!--
+        letter-spacing 은 자간
+    -->
+    <p id="special" class="content">
+        <strong style="color: red;">Front-end</strong>
+        Developer
+    </p>
+    <!--
+        태그가 여러개로 겹칠때 style > id > class > tag 순서대로 우선 적용됨
+    -->
+
+    <div class="box">
+        <!--
+            div, p , h 는 기본적으로 display block 이 기본속성임
+            또한 특정 스타일들은 글을 쓴 태그가 아닌 부모태그에 스타일을
+            넣어도 inherit(상속) 된다.
+            (color, font-size, font-family 등등)
+
+            box-shadow(x좌표,y좌표,블러정도,펼쳐짐정도, 색상)
+        -->
+        <p>
+            저는 부산에 사는 27살 프론트엔드 개발자과정을
+            준비중인 학생입니다.
+        </p>
+    </div>
+
+</body>
+</html>

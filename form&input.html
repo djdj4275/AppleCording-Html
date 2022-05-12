@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-background {
+            background-color: black;
+            padding: 30px;
+        }
+        .form-white {
+            background-color: white;
+            padding: 30px;
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
+        }
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        div, input, textarea {
+            box-sizing: border-box; 
+        }
+        /* box-sizing : border-box 로 박스 크기들을 정형화시킴 */
+        .w-50 {
+            width: 50%;
+            float: left;
+            padding: 10px;
+        }
+        .w-100 {
+            width: 100%;
+            padding: 10px;
+        }
+        .yellow-button {
+            padding: 10px;
+            display: block;
+            margin-left: auto;
+            background-color: yellow;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-background">
+        <div class="form-white">
+            <form>
+                <div class="w-100">
+                    <h3>contact us</h3>
+                    <p>your email</p>
+                    <input class="form-input" type="email" placeholder="adfadsf">
+                </div>
+                <div class="w-50">
+                    <p>first name</p>
+                    <input type="text">
+                </div>
+                <div class="w-50">
+                    <p>last name</p>
+                    <input type="text">
+                </div>
+                <div style="clear:both"></div>
+
+                <div class="w-100">
+                    <p>message</p>
+                    <textarea class="form-input"></textarea>
+                </div>
+
+                <div>
+                    <input id="sub" type="checkbox">
+                    <label for="sub">subscribe</label>
+                    <!-- label for에 위의것의 id와 같이 입력하면 연동됨 -->
+                    <!-- subscribe란 글자를 눌러도 체크된걸로 침 -->
+                    <button class="yellow-button">send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

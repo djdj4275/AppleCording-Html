@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+        }
+        div {
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        h4 {
+            font-size: 22px;
+        }
+        .main-background {
+            background-image: linear-gradient(to bottom, blue, skyblue);
+            height: 550px;
+            padding: 20px;
+            color: white;
+        }
+        .main-iphone {
+            width: 400px;
+            float: right;
+            margin-top: 95px;
+        }
+        .main-container {
+            max-width: 100%;
+            margin: auto;
+        }
+        .main-text {
+            float: left;
+            margin-top: 50px;
+        }
+        .btn {
+            padding: 15px 20px;
+            font-size: 16px;
+            font-family: 'nanumsqure';
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-black {
+            background-color: #444;
+            color: white;
+        }
+        .btn-black:hover {
+            background-color: violet;
+        }
+        .btn-black:active {
+            background-color: blueviolet;
+        }
+
+        .s1 {
+            width: 100%;
+            height: 250px;
+            text-align: center;
+            padding: 50px 0px;
+        }
+        
+        .service {
+            background-color: #4e61c0;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 60px 30px 50px 30px;
+        }
+        .service-items {
+            display: flex;
+        }
+        .service-items div {
+            width: 25%;
+        }
+        .service h5 {
+            margin-bottom: 0px;
+        }
+        .service-icon {
+            background-color: white;
+            color: #4e61c0;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .portfolio {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            text-align: center;
+        }
+        .portfolio-item {
+            position: relative;
+            float: left;
+            width: 50%;
+            height: 350px;
+            background-size: cover;
+        }
+        .portfolio-container {
+            text-align: left;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .portfolio-text {
+            color: white;
+            padding: 50px;
+            width: 100px;
+        }
+        .d1 {
+            background-image: url(./portfolio-1.jpg);
+        }
+        .d2 {
+            background-image: url(./portfolio-2.jpg);
+        }
+        .d3 {
+            background-image: url(./portfolio-3.jpg);
+        }
+        .d4 {
+            background-image: url(./portfolio-4.jpg);
+        }
+        .white-box {
+            position : absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            border: 0px solid white;
+            transition: border 0.5s;
+        }
+        .white-box:hover {
+            border: 30px solid white;
+        }
+
+        @media screen and (max-width : 992px) {
+            .main-iphone {
+                width: 300px;
+                display: block;
+                float: none;
+                margin: auto;
+                margin-top: 42px;
+                border-bottom: 2px grey solid;
+                border-radius: 5px;
+            }
+            .main-text {
+                float: none;
+                margin-top: 50px;
+                text-align: center;
+            }
+            .service-items {
+                display: flex;
+                flex-direction: column;
+            }
+            .service-items div {
+                width: 100%;
+            }
+            .portfolio-item {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-background">
+        <div class="main-container">
+            <div class="main-text">
+                <h1>Landing Page for Apps</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <button class="btn btn-black">Show More</button>
+                <div class="reset"></div>
+            </div>
+            <img src="./iphone.png" class="main-iphone">
+        </div>
+    </div>
+
+    <div class="s1">
+        <div class="s1-1">
+            <h3>It is the perfect theme for your next Project!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button class="btn btn-black">show Portfolio</button>
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="main-container">
+            <h4 style="margin-top : 0;">What we Offer</h4>
+
+            <div class="service-items">
+                <div>
+                    <i class="fa fa-mobile fa-4x service-icon"></i>
+                    <h5>Responsive</h5>
+                    <p>lorem ipsum I love coding</p>
+                </div>
+                <div>
+                    <i class="fa fa-flask fa-3x service-icon"></i>
+                    <h5>Experiments</h5>
+                    <p>lorem ipsum I love coding</p>
+                </div>
+                <div>
+                    <i class="fa fa-flash fa-3x service-icon"></i>
+                    <h5>Quickness</h5>
+                    <p>lorem ipsum I love coding</p>
+                </div>
+                <div>
+                    <i class="fa fa-globe fa-3x service-icon"></i>
+                    <h5>Global Shipping</h5>
+                    <p>lorem ipsum I love coding</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio">
+        <h4>What we can DO</h4>
+        <div class="portfolio-container">
+            <div class="portfolio-item d1">
+                <div class="white-box"></div>
+                <div class="portfolio-text">
+                    <h4>Stationary</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="portfolio-item d2">
+                <div class="white-box"></div>
+                <div class="portfolio-text">
+                    <h4>Stationary</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="portfolio-item d3">
+                <div class="white-box"></div>
+                <div class="portfolio-text">
+                    <h4>Stationary</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="portfolio-item d4">
+                <div class="white-box"></div>
+                <div class="portfolio-text">
+                    <h4>Stationary</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div style="clear :both"></div>
+        </div>
+    </div>
+</body>
+</html>

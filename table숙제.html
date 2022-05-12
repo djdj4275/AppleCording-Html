@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cart-background {
+            width: 100%;
+            background-color: #c2d3de;
+            padding: 30px;
+        }
+        .cart-table {
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            background-color: white;
+            border-radius: 10px; /*collapse랑 같이 있으면 안먹을수도 있음*/ 
+        }
+        .cart-table td, .cart-table th {
+            padding: 15px;
+            border-bottom: 1px solid #c2d3de;
+        }
+        .cart-table th:nth-child(2) {
+            width: 300px;
+        } /* cart-table안의 th중에 2번째것 */
+        .btn {
+            padding: 15px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: coral;
+            color: white;
+            cursor: pointer; /* cursor:pointer를 쓰면 마우스 커서를 갖다대면 누를수있게끔 커서모양바뀜*/
+        }
+        .btn:hover {
+            background-color: chocolate;
+        }
+        .btn:focus {
+            background-color: grey;
+        }
+        .btn:active {
+            background-color: brown;
+            border: 2px solid black;
+        }
+        /* hover > focus > active 순서여야 작동됨*/
+        .input-test {
+            font-size: 20px;
+        }
+        .input-test:focus {
+            border-bottom: 2px solid red;
+        }
+
+        .custom-link {
+            text-decoration: none;
+        }
+        .custom-link:link { /*:link는 방문전 상태란 뜻*/
+            color: skyblue;
+        }
+        .custom-link:visited { /*visited는 방문후*/
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="cart-background">
+        <h3>your shopping cart</h3>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="cell-long">item</th>
+                    <th>amount</th>
+                    <th>price</th>
+                    <th>total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="./html/img/item1.png" width="50px"></td>
+                    <td>카메라</td>
+                    <td>1</td>
+                    <td>7000</td>
+                    <td>7000</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: right;">총가격 : 7000</td>
+                    <!-- colspan은 셀 합치기 (몇칸 합칠지) -->
+                </tr>
+            </tbody>
+        </table>
+
+        <button class="btn">구매하기</button>
+        <input class="input-test">
+        <a href="#" class="custom-link">링크</a>
+    </div>
+
+</body>
+</html>

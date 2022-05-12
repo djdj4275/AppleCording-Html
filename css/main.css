@@ -1,0 +1,250 @@
+.profile {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sdfsdf {
+    font-family: gulim;
+    color: red;
+    letter-spacing: -1px;
+    text-align: center;
+}
+#special {
+    text-align: center;
+    color: blue;
+}
+.content {
+    color: red;
+}
+.box {
+    width: 200px; height: auto; 
+    background-color: cadetblue; 
+    color: white;
+    border: 4px solid black;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 5px 10px;
+    text-align: center; 
+    margin-left: auto;margin-right: auto;
+    font-size: 14px;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+.container {
+    width: 800px;
+}
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: aquamarine;
+}
+.left_menu {
+    width: 20%;
+    height: 400px;
+    background-color: cornflowerblue;
+    /* float: left; */
+    display: inline-block;
+    vertical-align: top;
+}
+.right_menu {
+    width: 80%;
+    height: 400px;
+    background-color: coral;
+    /* float: left; */
+    display: inline-block;
+}
+.footer {
+width: 100%;
+    height: 100px;
+    background-color: grey;
+    /* clear: both; */
+}
+
+
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/shoes.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(70%);
+    padding: 1px;
+    z-index: 2;
+}
+/* 
+테두리가 붙어있으면 마진값이 둘다 들어가서 둘다 적용이 되게 된다.
+때문에 테두리가 붙지않도록 패딩 1px만 주어 테두리를 떼주면 적용됨
+(margin collapse현상)
+ */
+
+.main-title {
+    color: white;
+    font-size: 40px;
+    margin-top: 100px;
+    padding: 1px;
+    text-align: center;
+}
+.main-content {
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+.main-button {
+    color: black;
+    padding: 15px;
+    font-size: 20px;
+    background-color: cadetblue;
+    border: none;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; 
+    top: 100px;
+    z-index: 10;
+}
+/* position 부여시 top 이나 left 등 좌표이동가능 */
+/* position 부여시 float처럼 붕 뜸 */
+/* static 은 좌표이동x */
+/* fixed는 현재화면의 기준으로 이동 (화면크기바꿔도 붙어서 움직임 */
+/* absolute는 내 부모태그가 기준으로 움직임 (position : relative 가진 부모 기준) */
+/* relative 내 원래 위치를 기준으로 이동하겠다. 라는뜻 */
+
+/* 
+position:absolute 요소 가운데 정렬하려면
+left:0, right:0, margin-left,right:auto, width:적당한값  
+*/
+
+.explain-box {
+    width: 80%;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    position: relative;
+    top: -40px;
+}
+/* z-index가 높을수록 앞으로오고 낮을수록 뒤로 감 */
+/* max width를 정해주면 화면이 아무리 커져도 그 이상 커지지않음 */
+/* 단 width는 컨텐츠 영역의 너비를 의미하기때문에 padding폭은 의미 없음 */
+/* box-sizing: border-box; 로 padding, border을 포함한 전체영역으로 설정해주면 됨 */
+
+.nav-bg {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: coral;
+    align-items: center;
+}
+.nav-item {
+    margin-right: 10px;
+}
+
+.product-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.product-container div {
+    float: left;
+    width: 25%;
+}
+
+.product-container i {
+    background-color: burlywood;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    padding-top: 35px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+}
+
+.shop-bg {
+    background-color: #eee;
+    padding: 20px;
+}
+.shop-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.shop-item {
+    width: 33%;
+    padding: 10px;
+}
+.shop-item img {
+    width: 100%;
+    display :block; /
+}
+
+.overlay {
+    position :absolute;
+    width : 100%;
+    height : 100%;
+    background : black;
+    opacity : 0;
+    transition : all 1s;
+    transition-timing-function :cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.overlay:hover {
+    opacity : 0.5;
+}
+
+.overlay-wrap {
+    position :absolute;
+    width : 100%;
+    height : 100%;
+    overflow : hidden;
+}
+.overlay-black {
+    width : 100%;
+    height : 100%;
+    background-color :black;
+    margin-top: 100%;
+    opacity : 0.3;
+    transition: all 1s;
+}
+.overlay-wrap:hover .overlay-black {
+    margin-top : 50%;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .main-title {
+        font-size: 30px;
+    }
+}
+/* media query 문법 : @media screen and ~~ (css파일 맨밑에 씀)*/
+/* 최대치크기인 1200px 밑으로는 main-title의 폰트사이즈를 전부 30px로 */
+
+@media screen and (max-width: 768px) {
+    .main-title {
+        font-size: 20px;
+    }
+}
+/* 브라우저 폭 760px이하시 폰트사이즈 20px */
+/* 큰거부터 작은거 순서대로 씀 */
+
+@media (max-width: 576px) {
+    .main-title {
+        font-size: 10px;
+    }
+}
+/* screen and 빼도 작동은 하지만 형식 맞추는게 좋음 */
+/* screen 대신 print 쓰면 프린트 화면이 됨 */
+
+/* 1200px : 태블릿 디자인 */
+/* 992px */
+/* 768px */
+/* 576px : 모바일 디자인 이렇게 단위 많이 사용*/ 
